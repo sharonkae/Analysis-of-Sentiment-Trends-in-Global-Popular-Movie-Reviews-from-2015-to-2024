@@ -1,11 +1,11 @@
-# 🎬 IMDB Movie Reviews — Sentiment Analysis with VADER, BERT, ML & Streamlit Dashboard
+# Analysis-of-Sentiment-Trends-in-Global-Popular-Movie-Reviews-from-2015-to-2024
 
 This project analyzes IMDB movie reviews using multiple sentiment analysis approaches, compares their performance, and visualizes insights through an interactive Streamlit dashboard.  
 The workflow includes data cleaning, exploratory data analysis (EDA), NLP preprocessing, three sentiment models (VADER, BERT, ML), and dashboard deployment.
 
 ---
 
-## 📌 Project Proposal
+## Project Proposal
 
 The goal of this project is to understand how audiences react to movies by analyzing large-scale IMDB reviews.  
 Specifically, the project aims to:
@@ -19,16 +19,10 @@ Specifically, the project aims to:
    - **BERT** (transformer-based deep learning)
    - **Traditional ML model** (Logistic Regression / SVM)
 4. Compare the performance of the three models.
-5. Build a **Streamlit dashboard** to visualize:
-   - Sentiment trends by year
-   - WordCloud
-   - TF-IDF keywords
-   - Movie-level sentiment breakdown
-   - Model comparison (VADER vs BERT vs ML)
 
 ---
 
-## 🛠️ Steps Taken
+## Steps Taken
 
 ### 1. Data Cleaning
 Both datasets were cleaned independently before merging:
@@ -53,20 +47,20 @@ EDA was performed on both datasets:
 ### 3. Sentiment Analysis Models
 Three models were implemented:
 
-#### ✔ VADER  
+#### VADER  
 A lexicon-based model suitable for social media and short reviews.  
 Output stored in:
 - `sentiment_score`
 - `sentiment_label`
 
-#### ✔ BERT  
+#### BERT  
 A transformer-based classifier fine‑tuned for sentiment analysis.  
 Output stored in:
 - `bert_label`
 - `bert_binary`
 - `bert_confidence`
 
-#### ✔ Machine Learning Model  
+#### Machine Learning Model  
 A traditional ML classifier trained on TF-IDF features.  
 Output stored in:
 - `ml_pred`
@@ -78,4 +72,4 @@ For each year, the average sentiment score was computed:
 - `bert_avg`
 - `ml_avg`
 
-These were plotted to compare trends across time.
+
